@@ -1,0 +1,43 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+@use "sass:math";
+
+h1 {
+	box-sizing: content-box;
+	text-align: center;
+}
+
+.badge-lg {
+	margin: percentage(126px/812px) percentage(137px/375px);
+	justify-content: center;
+}
+
+button.btn {
+	top: percentage(622px/812px);
+	@include regular-button;
+	border: none;
+}
+
+ul {
+	margin: 0;
+	li.list-item {
+		padding: 0 0.25rem;
+		display: inline-block;
+		width: percentage(312 / 375);
+	}
+}
+
+button.badge-lg,
+.app-watermark {
+	justify-content: center;
+	align-items: baseline;
+}
+
+.app-watermark {
+	position: relative;
+	padding: 0;
+	align-items: center;
+	margin-left: rem(118px - 40px);
+	margin-right: rem(118px - 40px);
+	bottom: percentage(19px/812px);
+}

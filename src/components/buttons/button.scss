@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.btn {
+	@include regular-button;
+	margin: auto 0;
+	border: none;
+	&-cancel {
+		border: none;
+		background: transparent;
+		position: absolute;
+		padding: 0.25rem 0.25rem;
+		top: rem(35px);
+		right: rem(35px);
+	}
+	&-secondary {
+		padding: rem(13px) 1rem;
+		@include secondary-button;
+	}
+}

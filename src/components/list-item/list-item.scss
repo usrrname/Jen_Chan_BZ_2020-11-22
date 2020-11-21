@@ -1,0 +1,17 @@
+@import "../../styles/styles.scss";
+
+li.app-list-item {
+	margin: rem(23px /2) 0;
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	width: rem(312px);
+	height: rem(66px);
+
+	span > p {
+		width: rem(255px);
+		height: auto;
+		text-align: left justify;
+		text-overflow: wrap;
+	}
+}

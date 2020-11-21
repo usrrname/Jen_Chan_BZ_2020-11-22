@@ -1,0 +1,23 @@
+{
+   "cards": [ {
+      "heading":"Professional Liability",
+      "caption":"Erros & Omissions (E & O insurance)",
+      "className":"briefcase"
+    },
+    {
+      "heading":"General Liability",
+      "caption":"Help mitigate against loss (CGL insurance)",
+      "className":"cloud-rain"
+    },
+    {
+      "heading":"Business Owner’s Policy",
+      "caption":"The complete package (BOP)",
+      "className":"package"
+    },
+    {
+      "heading":"Cyber",
+      "caption":"Internet-bsed risks (CLIC)",
+      "className":"wifi"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.card {
+	display: flex;
+	align-items: center;
+	@include card;
+	&:hover {
+		cursor: pointer;
+	}
+	.card-input:not(:checked) {
+		display: none;
+		+ div.checkmark {
+			display: none;
+		}
+	}
+	.card-input:checked {
+		~ .checkmark {
+			margin-left: auto;
+			display: inline-flex;
+			-webkit-animation-name: fadeInCheckbox;
+			animation-name: fadeInCheckbox;
+			-webkit-animation-duration: 0.5s;
+			animation-duration: 0.5s;
+			-webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+			animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		}
+	}
+	+ .card-input {
+		:checked {
+			display: none;
+			border: 2px solid $sea-blue;
+			-webkit-transition: border 0.3s;
+			-o-transition: border 0.3s;
+			transition: border 0.3s;
+		}
+	}
+}
+
+@-webkit-keyframes fadeInCheckbox {
+	from {
+		opacity: 0;
+		-webkit-transform: rotateZ(-20deg);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: rotateZ(0deg);
+	}
+}
+
+@keyframes fadeInCheckbox {
+	from {
+		opacity: 0;
+		transform: rotateZ(-20deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotateZ(0deg);
+	}
+}

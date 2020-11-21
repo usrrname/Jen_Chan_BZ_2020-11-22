@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { RouteProps, withRouter } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { Routes } from './Router';
 
-function App() {
+const App = (props: RouteProps) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <TransitionGroup>
+      <CSSTransition
+        transitionAppear={true}
+        transitionAppearTimeout={600}
+        transitionEnterTimeout={600}
+        transitionLeaveTimeout={200}
+        transitionName="SlideIn"
+        key={props.location?.key}
+        classNames="appear"
+        timeout={{ enter: 300, exit: 300 }}
+      >
+        <Routes />
 
-export default App;
+      </CSSTransition>
+    </TransitionGroup>
+  );
+};
+
+export default withRouter(App);
