@@ -1,19 +1,17 @@
 import React from 'react';
 import { useRouteMatch } from 'react-router-dom';
 import { Icon } from 'ts-react-feather-icons';
-import { RouteParams } from '../../../types/components';
 import { Button } from '../../buttons/Button';
 import { CardGroup } from '../../card-group/card-group';
 import { NumberedQuestion } from '../../numbered-question/numbered-question';
 import { TextInput } from '../../text-input/text-input';
 
-type Props = RouteParams;
 
-export const SurveyDetail = (props: Props) => {
+export const SurveyDetail = () => {
 
   let route1 = useRouteMatch(`/survey/1`);
   let route2 = useRouteMatch(`/survey/2`);
-
+  
   return (
     <div>
       {route1 &&

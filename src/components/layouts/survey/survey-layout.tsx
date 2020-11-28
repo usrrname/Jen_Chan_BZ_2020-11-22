@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useRouteMatch } from "react-router-dom";
 import { BottomFloater } from '../../bottom-floater/bottom-floater';
 import './survey-layout.scss';
@@ -13,9 +13,6 @@ type Props = RouteParams;
 export const SurveyScreen = (props: Props) => {
   let match = useRouteMatch('/survey');
 
-  // survey pages start at 1
-  let [state, setState] = useState<number>(1);
-
   return (
     <>
       { match && <div className="container ph-6">
@@ -25,22 +22,10 @@ export const SurveyScreen = (props: Props) => {
           </Button>
           <Logo />
 
-          <SurveyDetail id={props.id} />
+          <SurveyDetail/>
         </div>
 
-        < BottomFloater
-          currentPage={state}
-          pageCount={7}
-          onIncrement={() => {
-            if (state > 1 && state < 3) {
-              setState(state + 1)
-            }
-          }}
-          onDecrement={() => {
-            if (state < 3) {
-              setState(state - 1);
-            }
-          }} />
+        <BottomFloater />
 
       </div>
 
