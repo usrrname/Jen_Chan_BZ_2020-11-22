@@ -1,6 +1,6 @@
+@use "sass:math";
 @import "_variables";
 @import "_mixins";
-@use "sass:math";
 
 :root {
 	font-family: var(--#{$font-stack});
