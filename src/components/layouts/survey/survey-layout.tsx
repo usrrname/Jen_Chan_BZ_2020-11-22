@@ -6,11 +6,8 @@ import { Button } from '../../buttons/Button';
 import { Logo } from '../../logo/logo';
 import { X } from 'react-feather';
 import { SurveyDetail } from './survey-detail';
-import { RouteParams } from '../../../types/components';
 
-type Props = RouteParams;
-
-export const SurveyScreen = (props: Props) => {
+export const SurveyScreen = () => {
   let match = useRouteMatch('/survey');
 
   return (
@@ -21,17 +18,11 @@ export const SurveyScreen = (props: Props) => {
             <X color='#0074d9' size={14} />
           </Button>
           <Logo />
-
-          <SurveyDetail/>
+          <SurveyDetail />
         </div>
-
         <BottomFloater />
-
       </div>
-
       }
-
-
     </>
   )
 }

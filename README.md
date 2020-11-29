@@ -1,3 +1,24 @@
+# Challenge
+- Atomically designed components in a layout with "pixel-perfect" designs
+- A start screen, 2 different pages with inputs
+- Write it in a framework of my choosing with 1 breakpoint's designs
+- Apply interactions and UX best practices, then deploy it.
+
+![Figma Design for Briza Front end Challenge]('./../src/assets/img/challenge1.png')
+
+# Notes
+- The design was for an iphone X but I made sure to provide some coverage for older phones by supporting 320px and a max width of 414px for Androids on the market.
+- Tried to roll my own util sass for columns, margin and padding. The outputted CSS is around ~3KB :D 
+- Started off creating units of components that fed into molecular composite components, then created layouts that contained different ones.
+-  Mentioned work was supposed to be finished in 4-5 hours but in all honesty, it took me that long to set up the type in `_variables.scss`
+- I guess if I went with an existing style library that would have made things easier
+
+For the record, I decided not to spend the whole time creating atomic classes for every style but grouped them into reusable mixins.
+
+Known Issues:
+- Badge size of numbers are ovalesque on 320px width
+- Pagination number matches the routing of survey/:id, however cutting down code through hooks is perhaps a missed opportunity since I haven't figured out how to master `useEffect()`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
