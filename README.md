@@ -4,7 +4,7 @@
 - Write it in a framework of my choosing with 1 breakpoint's designs
 - Apply interactions and UX best practices, then deploy it.
 
-![Figma Design for Briza Front end Challenge]('./../src/assets/img/challenge1.png')
+![Design for Front end Challenge](./src/assets/img/challenge1.png)
 
 # Notes
 - The design was for an iphone X but I made sure to provide some coverage for older phones by supporting 320px and a max width of 414px for Androids on the market.
