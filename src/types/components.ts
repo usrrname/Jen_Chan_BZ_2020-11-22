@@ -10,6 +10,3 @@ export type RadioOptionCard = {
   caption: string;
   className: IconName;
 }
-export interface RouteParams {
-  id: string
-}

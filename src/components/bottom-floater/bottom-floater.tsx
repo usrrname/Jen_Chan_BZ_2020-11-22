@@ -37,8 +37,6 @@ export const BottomFloater = () => {
       if (routeNumber > 1 && routeNumber < 3) {
         const prevPage = routeNumber - 1;
         link = `/survey/${prevPage}`;
-      } else if (route === 1) {
-        link = '/'
       } else {
         link = '/'
       }

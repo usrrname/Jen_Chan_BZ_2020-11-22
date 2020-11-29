@@ -7,7 +7,7 @@ import { SurveyScreen } from './components/layouts/survey/survey-layout';
 export const Routes = () => {
   return (
     <Switch>
-      <BrowserRouter>
+      <BrowserRouter basename="/umbrella_hub">
         <Route path="/" exact component={LoginScreen} />
         <Route path="/survey/:id" component={SurveyScreen} />
       </BrowserRouter>
