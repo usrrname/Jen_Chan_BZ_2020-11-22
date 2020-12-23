@@ -1,0 +1,60 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.typography {
+	&--variant-h1 {
+		@include fontsize-and-lineheight(40px, 46.88px);
+		@include fontfacer("Bold", $bold-weight);
+	}
+	&--variant-h2 {
+		@include fontfacer("Bold", $bold-weight);
+		@include fontsize-and-lineheight(38px, 45px);
+	}
+	&--variant-h3 {
+		@include fontsize-and-lineheight(24px, 28px);
+		@include fontfacer("Bold", $bold-weight);
+	}
+	&--variant-h4 {
+		@include fontsize-and-lineheight(17.0345px, 20px);
+		@include fontfacer("Medium", $medium-weight);
+	}
+	&--variant-h5 {
+		@include fontsize-and-lineheight(16px, 19px);
+		@include fontfacer("Medium", $medium-weight);
+	}
+	&--variant-h6 {
+		@include fontfacer("Regular", $normal-weight);
+		@include fontsize-and-lineheight(14.4471px, 17px);
+	}
+	&--variant-subheading1 {
+		@include fontfacer("Medium", $medium-weight);
+		font-size: 1rem;
+	}
+	&--variant-subheading2 {
+		@include fontfacer("Medium", $medium-weight);
+		font-size: 0.875rem;
+	}
+	&--variant-body2 {
+			@include fontsize-and-lineheight(12px, 14.06px);
+			@include fontfacer("Regular", $normal-weight);
+	}
+	&--color-primary {
+		color: $sea-blue;
+	}
+
+	&--color-gray {
+		color: $atom-gray;
+	}
+
+	&--color-watermark-gray {
+		color: $watermark-gray;
+	}
+
+	&--color-dark {
+		color: $charcoal-gray;
+	}
+
+	&--color-error {
+		color: $alert-red;
+	}
+}

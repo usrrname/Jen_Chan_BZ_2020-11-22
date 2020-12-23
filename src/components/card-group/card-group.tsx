@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconName } from 'ts-react-feather-icons';
 import cardData from "../../assets/data.json";
-
+import './card-group.scss';
 import { Card } from '../card/card';
 
 export const CardGroup = () => {

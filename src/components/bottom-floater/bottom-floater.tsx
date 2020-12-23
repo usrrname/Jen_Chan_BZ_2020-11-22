@@ -6,9 +6,10 @@ import { ChevronUp, ChevronDown } from 'react-feather'
 export const BottomFloater = () => {
 
   const history = useHistory<History>();
+
+  // grab the survey/:id number in the route path 
   let routeParam = history.location.pathname.slice(history.location.pathname.length - 1, history.location.pathname.length)
   const routeNumber = Number(routeParam);
-
   let pageCount = 7;
 
   // survey pages start at 1
@@ -54,7 +55,7 @@ export const BottomFloater = () => {
           <ChevronUp color="black" />
         </Link>
       </Button>
-      <Button className="nav-button down" onClick={nextPage} disabled={routeNumber > 2 ? true : false}>
+      <Button className="nav-button down" onClick={nextPage}>
         <Link to={getPath(true)}>
           <ChevronDown color="black" />
         </Link>

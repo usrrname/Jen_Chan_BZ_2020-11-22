@@ -5,13 +5,14 @@ import { Button } from '../../buttons/Button';
 import { CardGroup } from '../../card-group/card-group';
 import { NumberedQuestion } from '../../numbered-question/numbered-question';
 import { TextInput } from '../../text-input/text-input';
+import Typography from '../../typography/typography';
 
 
 export const SurveyDetail = () => {
 
   let route1 = useRouteMatch(`/survey/1`);
   let route2 = useRouteMatch(`/survey/2`);
-  
+
   return (
     <div>
       {route1 &&
@@ -26,9 +27,9 @@ export const SurveyDetail = () => {
           <TextInput />
 
           <Button className="btn-secondary d-flex mt-5">
-            <p className="sea-blue d-inline mr-3">OK</p>
-            <span className='sea-blue d-inline'>
-              <Icon name='check' size={19} />
+            <Typography variant={"p"} color={"primary"} className="sea-blue d-inline mr-2">OK</Typography>
+            <span className='d-inline'>
+              <Icon name='check' size={19} color='#0074d9' />
             </span>
           </Button>
         </>

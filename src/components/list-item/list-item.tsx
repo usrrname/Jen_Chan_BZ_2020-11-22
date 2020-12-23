@@ -1,4 +1,5 @@
 import React from 'react';
+import Typography from '../typography/typography';
 import './list-item.scss';
 
 type Props = {
@@ -6,12 +7,14 @@ type Props = {
   copy: string;
 }
 
-export const ListItem = (props: Props) => {
+export const ListItem = ({ number, copy }: Props) => {
   return (
     <li className="app-list-item">
-      <span className="badge-sm"><p className="sea-blue">{props.number}</p></span>
+      <span className="badge-sm">
+        <Typography variant={"p"} color={"primary"}>{number}</Typography>
+      </span>
       <span>
-        <p>{props.copy}</p>
+        <Typography variant={"p"} color={"color-gray"}>{copy}</Typography>
       </span>
     </li>
   )

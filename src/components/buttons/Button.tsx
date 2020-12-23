@@ -10,11 +10,8 @@ export type ButtonProps = {
   disabled?: boolean;
 }
 
-export const Button = (props: ButtonProps) => {
+export const Button = ({ children, ...props }: ButtonProps) => {
   return (
-    <button
-      className={props.className}
-      value={props.value}>
-      {props.children}</button>
+    <button {...props}>{children}</button>
   )
 }

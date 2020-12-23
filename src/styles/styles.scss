@@ -27,6 +27,16 @@ body {
 	color: $charcoal-gray;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	@include reset;
+}
+
 .container {
 	display: flex;
 	flex: 1;
@@ -83,52 +93,24 @@ body {
 	}
 }
 
-.small {
-	@include fontfacer("Regular", $normal-weight);
-	@include fontsize-and-lineheight(12px, 14.06px);
-}
-
 p {
 	@include fontfacer("Regular", $normal-weight);
 	@include fontsize-and-lineheight(18px, 21px);
 	&.cta {
 		@include button-call-to-action();
 	}
-	&.sea-blue {
-		color: $sea-blue;
-	}
 }
 
-.watermark {
-	@include fontfacer("Regular", $normal-weight);
-	text-align: center;
-	line-height: fontsize-and-lineheight(14.5465px, 17px);
-	color: $watermark-gray;
-}
-
-h1 {
-	@include fontfacer("Bold", $bold-weight);
-	@include fontsize-and-lineheight(40px, 46.88px);
-}
-
-h2 {
-	@include fontfacer("Bold", $bold-weight);
-	@include fontsize-and-lineheight(38px, 45px);
-}
-
-h3 {
-	@include fontsize-and-lineheight(24px, 28px);
+.bold {
 	@include fontfacer("Bold", $bold-weight);
 }
 
-h4 {
-	@include fontsize-and-lineheight(17.0345px, 20px);
+.medium-weight {
 	@include fontfacer("Medium", $medium-weight);
 }
 
-h6 {
+.regular-weight {
 	@include fontfacer("Regular", $normal-weight);
-	line-height: fontsize-and-lineheight(14.4471px, 17px);
 }
 
 nav {

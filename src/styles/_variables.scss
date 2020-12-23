@@ -6,6 +6,7 @@ $pastel-blue: #a8daff;
 $mint-green: #71f79f;
 $sea-blue: #0074d9;
 $charcoal-gray: #333333;
+$alert-red: #eb5757;
 
 // grays
 $atom-gray: #e5e5e5;
@@ -15,13 +16,6 @@ $white-80-percent: rgba(255, 255, 255, 0.8);
 
 // base font size
 $base-unit: 16px;
-
-.white {
-	color: $white;
-}
-.sea-blue {
-	color: $sea-blue;
-}
 
 /* box shadow */
 $atomic-4px-box-shadow: 0px 4px 4px rgba(43, 42, 42, 0.1);

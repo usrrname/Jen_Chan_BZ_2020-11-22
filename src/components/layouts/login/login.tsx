@@ -3,6 +3,7 @@ import { Umbrella, X } from 'react-feather';
 import { Link } from 'react-router-dom';
 import { Button, ButtonProps } from '../../../components/buttons/Button';
 import { ListItem } from '../../list-item/list-item';
+import Typography from '../../typography/typography';
 import { Watermark } from '../../watermark/watermark';
 import './login.scss';
 
@@ -23,7 +24,7 @@ export const LoginScreen = (props: Props) => {
         <Umbrella color='#0074d9' size={60} />
       </div>
 
-      <h1 className="ph-2">So what gives?</h1>
+      <Typography variant={"h1"} color={"dark"}>So what gives?</Typography>
       <ul className='m-0 app-list-items'>
         <ListItem number={1} copy="Answer a few simple questions
 about your business"/>

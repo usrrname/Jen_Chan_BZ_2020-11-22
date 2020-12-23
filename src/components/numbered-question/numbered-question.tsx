@@ -1,4 +1,5 @@
 import React from 'react';
+import Typography from '../typography/typography';
 import './numbered-question.scss';
 
 type Props = {
@@ -6,11 +7,11 @@ type Props = {
   copy: string;
 }
 
-export const NumberedQuestion = (props: Props) => {
+export const NumberedQuestion = ({ number, copy }: Props) => {
   return (
     <div className="app-numbered-question d-flex">
-      <span className="badge-sm"><p className="sea-blue">{props.number}</p></span>
-      <h3 className="d-inline-block"><p>{props.copy}</p></h3>
+      <span className="badge-sm"><Typography variant={"p"} color={"primary"}>{number}</Typography></span>
+      <Typography variant={"h3"} color={"dark"}>{copy}</Typography>
     </div>
   )
 }

@@ -1,4 +1,14 @@
+@import "../../styles/variables";
+@import '../../styles/styles';
+
 .app-watermark {
-	display: inline-block;
-	@include watermark-positioning;
+	svg + span {
+		justify-content: space-evenly;
+	}
+	.watermark {
+		@include fontfacer("Regular", $normal-weight);
+		text-align: center;
+		line-height: fontsize-and-lineheight(14.5465px, 17px);
+		color: $watermark-gray;
+	}
 }

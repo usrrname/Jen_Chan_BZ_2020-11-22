@@ -7,8 +7,18 @@
 .app-text-input {
 	top: percentage(199px/812px);
 }
+
 .btn-secondary {
 	top: percentage(249px/812px);
+}
+
+.app-numbered-question {
+	position: absolute;
+	top: percentage(103px/812px);
+	left: percentage(28px/375px);
+	right: percentage(28px/375px);
+	bottom: rem(41px);
+	height: fit-content;
 }
 
 .app-text-input,

@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+ul {
+	margin: 0;
+	li.list-item {
+		padding: 0 0.25rem;
+		display: inline-block;
+		width: percentage(312 / 375);
+		margin: rem(23px /2) 0;
+	}
+}
+.app-list-item {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	height: rem(66px);
+}
