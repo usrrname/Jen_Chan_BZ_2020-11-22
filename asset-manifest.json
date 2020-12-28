@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/umbrella_hub/static/css/main.bd3b02c2.chunk.css",
+    "main.js": "/umbrella_hub/static/js/main.00b5e9cd.chunk.js",
+    "main.js.map": "/umbrella_hub/static/js/main.00b5e9cd.chunk.js.map",
+    "runtime-main.js": "/umbrella_hub/static/js/runtime-main.85a11de9.js",
+    "runtime-main.js.map": "/umbrella_hub/static/js/runtime-main.85a11de9.js.map",
+    "static/js/2.bed3bea3.chunk.js": "/umbrella_hub/static/js/2.bed3bea3.chunk.js",
+    "static/js/2.bed3bea3.chunk.js.map": "/umbrella_hub/static/js/2.bed3bea3.chunk.js.map",
+    "static/js/3.0025d75c.chunk.js": "/umbrella_hub/static/js/3.0025d75c.chunk.js",
+    "static/js/3.0025d75c.chunk.js.map": "/umbrella_hub/static/js/3.0025d75c.chunk.js.map",
+    "index.html": "/umbrella_hub/index.html",
+    "static/css/main.bd3b02c2.chunk.css.map": "/umbrella_hub/static/css/main.bd3b02c2.chunk.css.map",
+    "static/js/2.bed3bea3.chunk.js.LICENSE.txt": "/umbrella_hub/static/js/2.bed3bea3.chunk.js.LICENSE.txt",
+    "static/media/watermark.scss": "/umbrella_hub/static/media/Roboto-Regular.03523cf5.ttf",
+    "static/media/logo.0c081d39.svg": "/umbrella_hub/static/media/logo.0c081d39.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.85a11de9.js",
+    "static/js/2.bed3bea3.chunk.js",
+    "static/css/main.bd3b02c2.chunk.css",
+    "static/js/main.00b5e9cd.chunk.js"
+  ]
+}
