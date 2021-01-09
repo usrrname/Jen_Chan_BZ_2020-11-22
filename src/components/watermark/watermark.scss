@@ -1,12 +1,12 @@
 @import "../../styles/variables";
-@import '../../styles/styles';
+@import "../../styles/styles";
 
 .app-watermark {
 	svg + span {
 		justify-content: space-evenly;
 	}
 	.watermark {
-		@include fontfacer("Regular", $normal-weight);
+		@include fontfacer("Regular", $regular);
 		text-align: center;
 		line-height: fontsize-and-lineheight(14.5465px, 17px);
 		color: $watermark-gray;

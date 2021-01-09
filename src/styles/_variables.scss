@@ -31,9 +31,23 @@ $fonts-path: "../assets/fonts/";
 $base-font-family: "Roboto";
 $font-stack: $base-font-family, sans-serif;
 
-$normal-weight: 400;
-$medium-weight: 500;
-$bold-weight: 900;
+/*font weights*/
+
+$regular: 400;
+$medium: 500;
+$bold: 900;
+
+$font-weight: (
+	"regular": $regular,
+	"medium": $medium,
+	"bold": $bold,
+);
+
+@each $name, $weight in $font-weight {
+	.text-#{$name} {
+		font-weight: $weight;
+	}
+}
 
 @mixin fontfacer(
 	$type: "",

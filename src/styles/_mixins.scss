@@ -54,9 +54,6 @@
 	box-shadow: $card-box-shadow;
 	justify-content: center;
 	align-items: center;
-	p {
-		font-weight: $medium-weight;
-	}
 }
 
 @mixin icon($size, $bg-color) {
@@ -104,13 +101,14 @@
 	height: rem(36.58px);
 	position: absolute;
 	opacity: 1;
+	padding: auto;
 	margin: 0;
 	top: 18.33%;
 	bottom: 20.69%;
 	background: $white;
 	border-radius: 2.52308px;
 	border: 0;
-	align-items: baseline;
+	align-items: center;
 
 	svg {
 		@include reset;

@@ -49,7 +49,7 @@ p {
 	align-items: baseline;
 }
 // iphone 5/se
-@media (max-width: $breakpoint-min) {
+@media screen and (min-width: $breakpoint-min) and (max-width: 360px) {
 	html,
 	body {
 		font-size: 70%;
@@ -58,7 +58,7 @@ p {
 		padding: 0em 1rem;
 	}
 }
-@media (min-width: $breakpoint-min) and (max-width: $breakpoint-iphone-x) {
+@media screen and (min-width: 360px) and (max-width: $breakpoint-iphone-x) {
 	body {
 		font-size: 100%;
 		box-sizing: content-box;
@@ -68,7 +68,7 @@ p {
 		display: none;
 	}
 }
-@media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
+@media screen and (max-width: $breakpoint-max) {
 	body {
 		font-size: 100%;
 		box-sizing: content-box;
@@ -94,7 +94,7 @@ p {
 }
 
 p {
-	@include fontfacer("Regular", $normal-weight);
+	@include fontfacer("Regular", $regular);
 	@include fontsize-and-lineheight(18px, 21px);
 	&.cta {
 		@include button-call-to-action();
@@ -102,15 +102,15 @@ p {
 }
 
 .bold {
-	@include fontfacer("Bold", $bold-weight);
+	@include fontfacer("Bold", $bold);
 }
 
-.medium-weight {
-	@include fontfacer("Medium", $medium-weight);
+.text-medium {
+	@include fontfacer("Medium", $medium);
 }
 
 .regular-weight {
-	@include fontfacer("Regular", $normal-weight);
+	@include fontfacer("Regular", $regular);
 }
 
 nav {
@@ -126,7 +126,7 @@ nav {
 	&-sm {
 		box-sizing: content-box;
 		@include icon(36px, $pastel-blue);
-		padding: rem(8px) rem(13px);
+		padding: rem(8px) rem(12px);
 		margin-right: rem(21px);
 		display: inline;
 		p {

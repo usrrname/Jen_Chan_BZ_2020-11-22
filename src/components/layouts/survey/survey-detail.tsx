@@ -27,7 +27,7 @@ export const SurveyDetail = () => {
           <TextInput />
 
           <Button className="btn-secondary d-flex mt-5">
-            <Typography variant={"p"} color={"primary"} className="sea-blue d-inline mr-2">OK</Typography>
+            <Typography variant={"p"} color={"primary"} className="sea-blue d-inline mr-2 text-medium">OK</Typography>
             <span className='d-inline'>
               <Icon name='check' size={19} color='#0074d9' />
             </span>
